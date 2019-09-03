@@ -49,9 +49,8 @@ public class CardMoveChecks {
         if (sourceDeck == destinationDeck){ throw new MoveException("Move source and destination can't be the same");}
         if (sourceDeck.isEmpty()){ throw new MoveException("You can\'t move a card from an empty deck");}
         if (destinationDeck.getDeckType() == DeckType.STOCK){ throw new MoveException("You can\'t move cards to the stock");}
+        if (sourceDeck.getInvisibleCards() != 0){throw new MoveException("You can\'t move an invisible card");}
         if (sourceDeck.size() > sourceCardIndex){ throw new MoveException("You can\'t move more than 1 card at a time to a Stack Pile");}
-        if(DeckType.COLUMN == sourceDeck.getDeckType()){throw new MoveException("You can\'t move an invisible card");}
-
 
     }
 
@@ -102,7 +101,8 @@ public class CardMoveChecks {
      */
     static boolean opposingColor(Card card1, Card card2){
         // TODO: Write implementation
-        return true;
+        if (card1.getSuit() != card2.getSuit()){ return true;}
+        else return false;
     }
 
     /**
