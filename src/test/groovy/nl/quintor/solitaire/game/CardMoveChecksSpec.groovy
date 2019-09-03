@@ -13,7 +13,7 @@ import spock.lang.Unroll
 class CardMoveChecksSpec extends Specification {
 
     @Unroll
-    def "Invalid input calling checkPlayerInput whith #input will throw #exception.getSimpleName() with message |#message| when testing: #testcase" () {
+    def "Invalid input calling checkPlayerInput with #input will throw #exception.getSimpleName() with message |#message| when testing: #testcase" () {
         when:
         CardMoveChecks.checkPlayerInput(input)
         then:
@@ -71,7 +71,7 @@ class CardMoveChecksSpec extends Specification {
             exception.message == exceptionMessage
         where:
         sourceDeck                            | destinationDeck                |  index | exceptionMessage                                              || testcase
-        new Deck(DeckType.COLUMN)             | new Deck(DeckType.COLUMN )     | 0      |  'You can\'t move a card from an empty deck'                  || 'Moving cards from empty deck should not be possible'
+        new Deck(DeckType.COLUMN)             | new Deck(DeckType.COLUMN)     | 0      |  'You can\'t move a card from an empty deck'                  || 'Moving cards from empty deck should not be possible'
         TestUtil.createTestDeck(DeckType.COLUMN, 1)    | TestUtil.createTestDeck(DeckType.STOCK) | 888    |  'You can\'t move cards to the stock'                         || 'Moving cards to stock is not allowed'
         TestUtil.createTestDeck(DeckType.COLUMN, 3)    | TestUtil.createTestDeck(DeckType.STACK) | 0      |  'You can\'t move more than 1 card at a time to a Stack Pile' || 'Moving multiple cards is not allowed'
         TestUtil.createTestDeck(DeckType.COLUMN, 3, 2) | TestUtil.createTestDeck(DeckType.STACK) | 0      |  'You can\'t move an invisible card'                          || 'Moving invisible cards is not allowed'
