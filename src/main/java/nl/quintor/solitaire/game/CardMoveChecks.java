@@ -31,6 +31,7 @@ public class CardMoveChecks {
      */
     public static void checkPlayerInput(String[] input) throws MoveException{
         // TODO: Write implementation
+
     }
 
     /**

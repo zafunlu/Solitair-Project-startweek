@@ -251,7 +251,7 @@ div.footer {
 </div>
 <div class='summary-report'>
 <h3>Summary:</h3>
-<div class='date-test-ran'>Created on Tue Sep 03 21:57:45 CEST 2019 by daandeheer</div>
+<div class='date-test-ran'>Created on Tue Sep 03 22:17:00 CEST 2019 by daandeheer</div>
 <table class='summary-table'>
 <thead>
 <th>Executed features</th>
@@ -263,12 +263,12 @@ div.footer {
 </thead>
 <tbody>
 <tr>
-<td>16</td>
+<td>2</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100,0%</td>
-<td>0,203 seconds</td>
+<td>0,0%</td>
+<td>0,133 seconds</td>
 </tr>
 </tbody>
 </table>
@@ -282,7 +282,12 @@ div.footer {
 <tbody>
 <ul id='toc'>
 <li>
-<a href='#1669030141' class='feature-toc-ignored'>Invalid input calling checkPlayerInput whith #input will throw #exception.getSimpleName() with message |#message| when testing: #testcase</a>
+<a href='#2014265853' class='feature-toc-failure'>Invalid input calling checkPlayerInput whith [M, Z, G] will throw MoveException with message |Invalid Move syntax. "Z" is not a valid source location.
+See H̲elp for instructions.| when testing: Invalid source move</a>
+</li>
+<li>
+<a href='#-239794351' class='feature-toc-failure'>Invalid input calling checkPlayerInput whith [M, O, Z] will throw MoveException with message |Invalid Move syntax. "Z" is not a valid destination location.
+See H̲elp for instructions.| when testing: Invalid destination move</a>
 </li>
 <li>
 <a href='#1984895384' class='feature-toc-ignored'>Valid moves will not throw exceptions testing: #testcase</a>
@@ -306,52 +311,7 @@ div.footer {
 <a href='#1900329137' class='feature-toc-ignored'>Valid input calling cardLevelChecks will not throw exceptions testing : #testCase</a>
 </li>
 <li>
-<a href='#-1418442217' class='feature-toc-pass'>Given the cards DIAMONDS JACK, DIAMONDS FIVE the method opposingCards will return false</a>
-</li>
-<li>
-<a href='#-1407416667' class='feature-toc-pass'>Given the cards DIAMONDS JACK, HEARTS FIVE the method opposingCards will return false</a>
-</li>
-<li>
-<a href='#2055444140' class='feature-toc-pass'>Given the cards DIAMONDS JACK, SPADES SEVEN the method opposingCards will return true</a>
-</li>
-<li>
-<a href='#-1586016058' class='feature-toc-pass'>Given the cards DIAMONDS JACK, CLUBS FIVE the method opposingCards will return true</a>
-</li>
-<li>
-<a href='#-2027240489' class='feature-toc-pass'>Given the cards HEARTS TWO, HEARTS KING the method opposingCards will return false</a>
-</li>
-<li>
-<a href='#860853641' class='feature-toc-pass'>Given the cards HEARTS TWO, DIAMONDS KING the method opposingCards will return false</a>
-</li>
-<li>
-<a href='#-988165319' class='feature-toc-pass'>Given the cards HEARTS TWO, SPADES KING the method opposingCards will return true</a>
-</li>
-<li>
-<a href='#-980826014' class='feature-toc-pass'>Given the cards HEARTS TWO, CLUBS KING the method opposingCards will return true</a>
-</li>
-<li>
-<a href='#1582329085' class='feature-toc-pass'>Given the cards CLUBS FIVE, CLUBS ACE the method opposingCards will return false</a>
-</li>
-<li>
-<a href='#-346717924' class='feature-toc-pass'>Given the cards CLUBS FIVE, SPADES ACE the method opposingCards will return false</a>
-</li>
-<li>
-<a href='#-131897242' class='feature-toc-pass'>Given the cards CLUBS FIVE, DIAMONDS ACE the method opposingCards will return true</a>
-</li>
-<li>
-<a href='#-682645196' class='feature-toc-pass'>Given the cards CLUBS FIVE, HEARTS ACE the method opposingCards will return true</a>
-</li>
-<li>
-<a href='#2104275999' class='feature-toc-pass'>Given the cards SPADES TEN, SPADES QUEEN the method opposingCards will return false</a>
-</li>
-<li>
-<a href='#-530127508' class='feature-toc-pass'>Given the cards SPADES TEN, CLUBS QUEEN the method opposingCards will return false</a>
-</li>
-<li>
-<a href='#471423811' class='feature-toc-pass'>Given the cards SPADES TEN, DIAMONDS QUEEN the method opposingCards will return true</a>
-</li>
-<li>
-<a href='#1116722705' class='feature-toc-pass'>Given the cards SPADES TEN, HEARTS QUEEN the method opposingCards will return true</a>
+<a href='#1378159794' class='feature-toc-ignored'>Given the cards #cardLeft, #cardRight the method opposingCards will return #expectedResult</a>
 </li>
 <li>
 <a href='#751273891' class='feature-toc-ignored'>Given #card redSuit should return #expectedResult</a>
@@ -362,8 +322,9 @@ div.footer {
 </ul>
 <tr>
 <td colspan='10'>
-<div class='feature-description ignored' id='1669030141'>
-<span>Invalid input calling checkPlayerInput whith #input will throw #exception.getSimpleName() with message |#message| when testing: #testcase</span>
+<div class='feature-description failure' id='2014265853'>
+<span>Invalid input calling checkPlayerInput whith [M, Z, G] will throw MoveException with message |Invalid Move syntax. "Z" is not a valid source location.
+See H̲elp for instructions.| when testing: Invalid source move</span>
 <span style='float: right; font-size: 60%;'>
 <a href='#toc'>Return</a>
 </span>
@@ -392,6 +353,123 @@ div.footer {
 </td>
 <td>
 <div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Examples:</div>
+</td>
+<td>
+<div class='spec-examples'>
+<table class='ex-table'>
+<thead>
+<th class='ex-header'>testcase</th>
+<th class='ex-header'>input</th>
+<th class='ex-header'>exception</th>
+<th class='ex-header'>message</th>
+</thead>
+<tbody>
+<tr class='ex-fail'>
+<td class='ex-value'>Invalid source move</td>
+<td class='ex-value'>[M, Z, G]</td>
+<td class='ex-value'>class nl.quintor.solitaire.game.moves.ex.MoveException</td>
+<td class='ex-value'>Invalid Move syntax. "Z" is not a valid source location.
+See H̲elp for instructions.</td>
+<td class='ex-result'>FAIL</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='problem-description'>
+<div class='problem-header'>The following problems occurred:</div>
+<div class='problem-list'>
+<ul>
+<li>
+<pre>Expected exception of type &apos;nl.quintor.solitaire.game.moves.ex.MoveException&apos;, but no exception was thrown</pre>
+</li>
+</ul>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description failure' id='-239794351'>
+<span>Invalid input calling checkPlayerInput whith [M, O, Z] will throw MoveException with message |Invalid Move syntax. "Z" is not a valid destination location.
+See H̲elp for instructions.| when testing: Invalid destination move</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Examples:</div>
+</td>
+<td>
+<div class='spec-examples'>
+<table class='ex-table'>
+<thead>
+<th class='ex-header'>testcase</th>
+<th class='ex-header'>input</th>
+<th class='ex-header'>exception</th>
+<th class='ex-header'>message</th>
+</thead>
+<tbody>
+<tr class='ex-fail'>
+<td class='ex-value'>Invalid destination move</td>
+<td class='ex-value'>[M, O, Z]</td>
+<td class='ex-value'>class nl.quintor.solitaire.game.moves.ex.MoveException</td>
+<td class='ex-value'>Invalid Move syntax. "Z" is not a valid destination location.
+See H̲elp for instructions.</td>
+<td class='ex-result'>FAIL</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='problem-description'>
+<div class='problem-header'>The following problems occurred:</div>
+<div class='problem-list'>
+<ul>
+<li>
+<pre>Expected exception of type &apos;nl.quintor.solitaire.game.moves.ex.MoveException&apos;, but no exception was thrown</pre>
+</li>
+</ul>
+</div>
+</div>
 </td>
 </tr>
 <tr>
@@ -610,8 +688,8 @@ div.footer {
 </tr>
 <tr>
 <td colspan='10'>
-<div class='feature-description' id='-1418442217'>
-<span>Given the cards DIAMONDS JACK, DIAMONDS FIVE the method opposingCards will return false</span>
+<div class='feature-description ignored' id='1378159794'>
+<span>Given the cards #cardLeft, #cardRight the method opposingCards will return #expectedResult</span>
 <span style='float: right; font-size: 60%;'>
 <a href='#toc'>Return</a>
 </span>
@@ -632,780 +710,6 @@ div.footer {
 </td>
 <td>
 <div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Examples:</div>
-</td>
-<td>
-<div class='spec-examples'>
-<table class='ex-table'>
-<thead>
-<th class='ex-header'>cardLeft</th>
-<th class='ex-header'>cardRight</th>
-<th class='ex-header'>expectedResult</th>
-</thead>
-<tbody>
-<tr class='ex-pass'>
-<td class='ex-value'>DIAMONDS JACK</td>
-<td class='ex-value'>DIAMONDS FIVE</td>
-<td class='ex-value'>false</td>
-<td class='ex-result'>OK</td>
-</tr>
-</tbody>
-</table>
-</div>
-</td>
-</tr>
-<tr>
-<td colspan='10'>
-<div class='feature-description' id='-1407416667'>
-<span>Given the cards DIAMONDS JACK, HEARTS FIVE the method opposingCards will return false</span>
-<span style='float: right; font-size: 60%;'>
-<a href='#toc'>Return</a>
-</span>
-</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Expect:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Where:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Examples:</div>
-</td>
-<td>
-<div class='spec-examples'>
-<table class='ex-table'>
-<thead>
-<th class='ex-header'>cardLeft</th>
-<th class='ex-header'>cardRight</th>
-<th class='ex-header'>expectedResult</th>
-</thead>
-<tbody>
-<tr class='ex-pass'>
-<td class='ex-value'>DIAMONDS JACK</td>
-<td class='ex-value'>HEARTS FIVE</td>
-<td class='ex-value'>false</td>
-<td class='ex-result'>OK</td>
-</tr>
-</tbody>
-</table>
-</div>
-</td>
-</tr>
-<tr>
-<td colspan='10'>
-<div class='feature-description' id='2055444140'>
-<span>Given the cards DIAMONDS JACK, SPADES SEVEN the method opposingCards will return true</span>
-<span style='float: right; font-size: 60%;'>
-<a href='#toc'>Return</a>
-</span>
-</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Expect:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Where:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Examples:</div>
-</td>
-<td>
-<div class='spec-examples'>
-<table class='ex-table'>
-<thead>
-<th class='ex-header'>cardLeft</th>
-<th class='ex-header'>cardRight</th>
-<th class='ex-header'>expectedResult</th>
-</thead>
-<tbody>
-<tr class='ex-pass'>
-<td class='ex-value'>DIAMONDS JACK</td>
-<td class='ex-value'>SPADES SEVEN</td>
-<td class='ex-value'>true</td>
-<td class='ex-result'>OK</td>
-</tr>
-</tbody>
-</table>
-</div>
-</td>
-</tr>
-<tr>
-<td colspan='10'>
-<div class='feature-description' id='-1586016058'>
-<span>Given the cards DIAMONDS JACK, CLUBS FIVE the method opposingCards will return true</span>
-<span style='float: right; font-size: 60%;'>
-<a href='#toc'>Return</a>
-</span>
-</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Expect:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Where:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Examples:</div>
-</td>
-<td>
-<div class='spec-examples'>
-<table class='ex-table'>
-<thead>
-<th class='ex-header'>cardLeft</th>
-<th class='ex-header'>cardRight</th>
-<th class='ex-header'>expectedResult</th>
-</thead>
-<tbody>
-<tr class='ex-pass'>
-<td class='ex-value'>DIAMONDS JACK</td>
-<td class='ex-value'>CLUBS FIVE</td>
-<td class='ex-value'>true</td>
-<td class='ex-result'>OK</td>
-</tr>
-</tbody>
-</table>
-</div>
-</td>
-</tr>
-<tr>
-<td colspan='10'>
-<div class='feature-description' id='-2027240489'>
-<span>Given the cards HEARTS TWO, HEARTS KING the method opposingCards will return false</span>
-<span style='float: right; font-size: 60%;'>
-<a href='#toc'>Return</a>
-</span>
-</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Expect:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Where:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Examples:</div>
-</td>
-<td>
-<div class='spec-examples'>
-<table class='ex-table'>
-<thead>
-<th class='ex-header'>cardLeft</th>
-<th class='ex-header'>cardRight</th>
-<th class='ex-header'>expectedResult</th>
-</thead>
-<tbody>
-<tr class='ex-pass'>
-<td class='ex-value'>HEARTS TWO</td>
-<td class='ex-value'>HEARTS KING</td>
-<td class='ex-value'>false</td>
-<td class='ex-result'>OK</td>
-</tr>
-</tbody>
-</table>
-</div>
-</td>
-</tr>
-<tr>
-<td colspan='10'>
-<div class='feature-description' id='860853641'>
-<span>Given the cards HEARTS TWO, DIAMONDS KING the method opposingCards will return false</span>
-<span style='float: right; font-size: 60%;'>
-<a href='#toc'>Return</a>
-</span>
-</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Expect:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Where:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Examples:</div>
-</td>
-<td>
-<div class='spec-examples'>
-<table class='ex-table'>
-<thead>
-<th class='ex-header'>cardLeft</th>
-<th class='ex-header'>cardRight</th>
-<th class='ex-header'>expectedResult</th>
-</thead>
-<tbody>
-<tr class='ex-pass'>
-<td class='ex-value'>HEARTS TWO</td>
-<td class='ex-value'>DIAMONDS KING</td>
-<td class='ex-value'>false</td>
-<td class='ex-result'>OK</td>
-</tr>
-</tbody>
-</table>
-</div>
-</td>
-</tr>
-<tr>
-<td colspan='10'>
-<div class='feature-description' id='-988165319'>
-<span>Given the cards HEARTS TWO, SPADES KING the method opposingCards will return true</span>
-<span style='float: right; font-size: 60%;'>
-<a href='#toc'>Return</a>
-</span>
-</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Expect:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Where:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Examples:</div>
-</td>
-<td>
-<div class='spec-examples'>
-<table class='ex-table'>
-<thead>
-<th class='ex-header'>cardLeft</th>
-<th class='ex-header'>cardRight</th>
-<th class='ex-header'>expectedResult</th>
-</thead>
-<tbody>
-<tr class='ex-pass'>
-<td class='ex-value'>HEARTS TWO</td>
-<td class='ex-value'>SPADES KING</td>
-<td class='ex-value'>true</td>
-<td class='ex-result'>OK</td>
-</tr>
-</tbody>
-</table>
-</div>
-</td>
-</tr>
-<tr>
-<td colspan='10'>
-<div class='feature-description' id='-980826014'>
-<span>Given the cards HEARTS TWO, CLUBS KING the method opposingCards will return true</span>
-<span style='float: right; font-size: 60%;'>
-<a href='#toc'>Return</a>
-</span>
-</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Expect:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Where:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Examples:</div>
-</td>
-<td>
-<div class='spec-examples'>
-<table class='ex-table'>
-<thead>
-<th class='ex-header'>cardLeft</th>
-<th class='ex-header'>cardRight</th>
-<th class='ex-header'>expectedResult</th>
-</thead>
-<tbody>
-<tr class='ex-pass'>
-<td class='ex-value'>HEARTS TWO</td>
-<td class='ex-value'>CLUBS KING</td>
-<td class='ex-value'>true</td>
-<td class='ex-result'>OK</td>
-</tr>
-</tbody>
-</table>
-</div>
-</td>
-</tr>
-<tr>
-<td colspan='10'>
-<div class='feature-description' id='1582329085'>
-<span>Given the cards CLUBS FIVE, CLUBS ACE the method opposingCards will return false</span>
-<span style='float: right; font-size: 60%;'>
-<a href='#toc'>Return</a>
-</span>
-</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Expect:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Where:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Examples:</div>
-</td>
-<td>
-<div class='spec-examples'>
-<table class='ex-table'>
-<thead>
-<th class='ex-header'>cardLeft</th>
-<th class='ex-header'>cardRight</th>
-<th class='ex-header'>expectedResult</th>
-</thead>
-<tbody>
-<tr class='ex-pass'>
-<td class='ex-value'>CLUBS FIVE</td>
-<td class='ex-value'>CLUBS ACE</td>
-<td class='ex-value'>false</td>
-<td class='ex-result'>OK</td>
-</tr>
-</tbody>
-</table>
-</div>
-</td>
-</tr>
-<tr>
-<td colspan='10'>
-<div class='feature-description' id='-346717924'>
-<span>Given the cards CLUBS FIVE, SPADES ACE the method opposingCards will return false</span>
-<span style='float: right; font-size: 60%;'>
-<a href='#toc'>Return</a>
-</span>
-</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Expect:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Where:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Examples:</div>
-</td>
-<td>
-<div class='spec-examples'>
-<table class='ex-table'>
-<thead>
-<th class='ex-header'>cardLeft</th>
-<th class='ex-header'>cardRight</th>
-<th class='ex-header'>expectedResult</th>
-</thead>
-<tbody>
-<tr class='ex-pass'>
-<td class='ex-value'>CLUBS FIVE</td>
-<td class='ex-value'>SPADES ACE</td>
-<td class='ex-value'>false</td>
-<td class='ex-result'>OK</td>
-</tr>
-</tbody>
-</table>
-</div>
-</td>
-</tr>
-<tr>
-<td colspan='10'>
-<div class='feature-description' id='-131897242'>
-<span>Given the cards CLUBS FIVE, DIAMONDS ACE the method opposingCards will return true</span>
-<span style='float: right; font-size: 60%;'>
-<a href='#toc'>Return</a>
-</span>
-</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Expect:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Where:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Examples:</div>
-</td>
-<td>
-<div class='spec-examples'>
-<table class='ex-table'>
-<thead>
-<th class='ex-header'>cardLeft</th>
-<th class='ex-header'>cardRight</th>
-<th class='ex-header'>expectedResult</th>
-</thead>
-<tbody>
-<tr class='ex-pass'>
-<td class='ex-value'>CLUBS FIVE</td>
-<td class='ex-value'>DIAMONDS ACE</td>
-<td class='ex-value'>true</td>
-<td class='ex-result'>OK</td>
-</tr>
-</tbody>
-</table>
-</div>
-</td>
-</tr>
-<tr>
-<td colspan='10'>
-<div class='feature-description' id='-682645196'>
-<span>Given the cards CLUBS FIVE, HEARTS ACE the method opposingCards will return true</span>
-<span style='float: right; font-size: 60%;'>
-<a href='#toc'>Return</a>
-</span>
-</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Expect:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Where:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Examples:</div>
-</td>
-<td>
-<div class='spec-examples'>
-<table class='ex-table'>
-<thead>
-<th class='ex-header'>cardLeft</th>
-<th class='ex-header'>cardRight</th>
-<th class='ex-header'>expectedResult</th>
-</thead>
-<tbody>
-<tr class='ex-pass'>
-<td class='ex-value'>CLUBS FIVE</td>
-<td class='ex-value'>HEARTS ACE</td>
-<td class='ex-value'>true</td>
-<td class='ex-result'>OK</td>
-</tr>
-</tbody>
-</table>
-</div>
-</td>
-</tr>
-<tr>
-<td colspan='10'>
-<div class='feature-description' id='2104275999'>
-<span>Given the cards SPADES TEN, SPADES QUEEN the method opposingCards will return false</span>
-<span style='float: right; font-size: 60%;'>
-<a href='#toc'>Return</a>
-</span>
-</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Expect:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Where:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Examples:</div>
-</td>
-<td>
-<div class='spec-examples'>
-<table class='ex-table'>
-<thead>
-<th class='ex-header'>cardLeft</th>
-<th class='ex-header'>cardRight</th>
-<th class='ex-header'>expectedResult</th>
-</thead>
-<tbody>
-<tr class='ex-pass'>
-<td class='ex-value'>SPADES TEN</td>
-<td class='ex-value'>SPADES QUEEN</td>
-<td class='ex-value'>false</td>
-<td class='ex-result'>OK</td>
-</tr>
-</tbody>
-</table>
-</div>
-</td>
-</tr>
-<tr>
-<td colspan='10'>
-<div class='feature-description' id='-530127508'>
-<span>Given the cards SPADES TEN, CLUBS QUEEN the method opposingCards will return false</span>
-<span style='float: right; font-size: 60%;'>
-<a href='#toc'>Return</a>
-</span>
-</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Expect:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Where:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Examples:</div>
-</td>
-<td>
-<div class='spec-examples'>
-<table class='ex-table'>
-<thead>
-<th class='ex-header'>cardLeft</th>
-<th class='ex-header'>cardRight</th>
-<th class='ex-header'>expectedResult</th>
-</thead>
-<tbody>
-<tr class='ex-pass'>
-<td class='ex-value'>SPADES TEN</td>
-<td class='ex-value'>CLUBS QUEEN</td>
-<td class='ex-value'>false</td>
-<td class='ex-result'>OK</td>
-</tr>
-</tbody>
-</table>
-</div>
-</td>
-</tr>
-<tr>
-<td colspan='10'>
-<div class='feature-description' id='471423811'>
-<span>Given the cards SPADES TEN, DIAMONDS QUEEN the method opposingCards will return true</span>
-<span style='float: right; font-size: 60%;'>
-<a href='#toc'>Return</a>
-</span>
-</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Expect:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Where:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Examples:</div>
-</td>
-<td>
-<div class='spec-examples'>
-<table class='ex-table'>
-<thead>
-<th class='ex-header'>cardLeft</th>
-<th class='ex-header'>cardRight</th>
-<th class='ex-header'>expectedResult</th>
-</thead>
-<tbody>
-<tr class='ex-pass'>
-<td class='ex-value'>SPADES TEN</td>
-<td class='ex-value'>DIAMONDS QUEEN</td>
-<td class='ex-value'>true</td>
-<td class='ex-result'>OK</td>
-</tr>
-</tbody>
-</table>
-</div>
-</td>
-</tr>
-<tr>
-<td colspan='10'>
-<div class='feature-description' id='1116722705'>
-<span>Given the cards SPADES TEN, HEARTS QUEEN the method opposingCards will return true</span>
-<span style='float: right; font-size: 60%;'>
-<a href='#toc'>Return</a>
-</span>
-</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Expect:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Where:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Examples:</div>
-</td>
-<td>
-<div class='spec-examples'>
-<table class='ex-table'>
-<thead>
-<th class='ex-header'>cardLeft</th>
-<th class='ex-header'>cardRight</th>
-<th class='ex-header'>expectedResult</th>
-</thead>
-<tbody>
-<tr class='ex-pass'>
-<td class='ex-value'>SPADES TEN</td>
-<td class='ex-value'>HEARTS QUEEN</td>
-<td class='ex-value'>true</td>
-<td class='ex-result'>OK</td>
-</tr>
-</tbody>
-</table>
-</div>
 </td>
 </tr>
 <tr>
